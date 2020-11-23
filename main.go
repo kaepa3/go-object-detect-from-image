@@ -141,7 +141,7 @@ func main() {
 
 	flag.BoolVar(&jsoninfo, "json", false, "Output JSON information (instead of output image)")
 	flag.Float64Var(&probability, "prob", 0.4, "Probability")
-	flag.StringVar(&dir, "dir", filepath.Join(filepath.SplitList(build.Default.GOPATH)[0], "src/github.com/mattn/go-object-detect-from-image"), "Directory containing the trained model and labels files")
+	flag.StringVar(&dir, "dir", filepath.Join(filepath.SplitList(build.Default.GOPATH)[0], "src/github.com/kaepa3/go-object-detect-from-image"), "Directory containing the trained model and labels files")
 	flag.StringVar(&output, "output", "output.jpg", "Output file name")
 	flag.Parse()
 
